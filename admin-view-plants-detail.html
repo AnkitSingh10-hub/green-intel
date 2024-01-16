@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+          <img class="logo-image" src="logo.png" alt="" />The Green Intelligence
+        </div>
+  
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">About GI</a></li>
+            <li><a href="/">About tree tracker</a></li>
+  
+            <li class="services">
+              <a href="/">Contribute</a>
+  
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="/">Dropdown 1 </a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+  
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Contact us</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="contain">
+        <!-- Routing Links -->
+        <h2 class="links">Home</h2>
+    <div class="grid-container">
+        
+      <div class="sidebar">
+        <button><</button>
+        <div class="d">
+        <img class="plant-images" src="avocado.png" alt="" class="src">
+
+        </div>
+        <div class="plant-details">
+        <div>
+        <h2>Avocado</h2>
+        <p>Tag number: AV7839</p>
+        <p>Thapathali, Kathmandu</p>
+        <p>27.7051, 85.3202</p>
+
+        </div>
+        <div>
+            <h2>About the plant</h2>
+           <p> Avocado, scientifically known as Persia americana, is a versatile fruit native to South Central Mexico. It's not only delicious but also packed with nutrients.
+        </p>
+        </div>
+    </div>
+      </div>
+      <div class="main-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.82423753315!2d85.31594907423585!3d27.69182672617809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b2215a966f%3A0xd1b241958a3d3090!2sPathway%20Technologies!5e0!3m2!1sen!2snp!4v1705401766470!5m2!1sen!2snp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+</div>
+
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      const mainContent = document.querySelector(".main-content");
+      document.querySelector("button").onclick = function () {
+        sidebar.classList.toggle("sidebar_small");
+        mainContent.classList.toggle("main-content_large");
+      };
+    </script>
+  </body>
+</html>
