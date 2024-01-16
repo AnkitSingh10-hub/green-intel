@@ -111,9 +111,9 @@ input[type="checkbox"] {
 }
 
 /* CONTAINER */
-.container {
-  margin-top: 5rem;
-  padding: 0px 50px;
+.contain {
+  margin-top: 5.5rem;
+  padding: 0px 45px;
 }
 /* Routing Links */
 .links {
@@ -137,16 +137,16 @@ input[type="checkbox"] {
   border: 1px solid #ababab;
   background: #fff;
   margin-top: 30px;
-  background-image: url("search-image.png");
+  background-image: url("search-image-2.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 16px center;
-  padding-left: 50px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  color: #ababab;
+  padding-left: 55px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ABABAB;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -156,13 +156,13 @@ input[type="checkbox"] {
   border-radius: 8px;
   border: 1px solid #ababab;
   background: #fff;
-  background-image: url("search-button.png");
+  background-image: url("search-button-2.png");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
   cursor: pointer;
 }
 
@@ -207,6 +207,12 @@ input[type="checkbox"] {
   .dropdown li:hover {
     background-color: #4c9e9e;
   }
+  
+}
+@media (min-width: 1163px) {
+  table{
+    color:#000;
+  }
 }
 
 /* Table */
@@ -222,6 +228,7 @@ table {
   overflow: hidden;
   border-collapse: separate;
 }
+
 th {
   color: white;
   background-color: #6e9341;
