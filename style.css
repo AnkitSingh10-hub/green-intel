@@ -132,7 +132,7 @@ input[type="checkbox"] {
   gap: 10px;
 }
 .search {
-  width: 95%;
+  width: 90%;
   border-radius: 8px;
   border: 1px solid #ababab;
   background: #fff;
@@ -144,7 +144,6 @@ input[type="checkbox"] {
   padding-left: 55px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: #ABABAB;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -214,7 +213,7 @@ input[type="checkbox"] {
 /* Table */
 table {
   
-  width: 100%;
+  width: 80vw;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -303,3 +302,20 @@ tr:last-child td:last-child {
   font-weight: 700;
   line-height: normal;
 }
+/* 
+@media  (min-width:470px) {
+  th {
+    font-size: 10px;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  
+  
+} */
