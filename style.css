@@ -222,10 +222,22 @@ table {
   overflow: hidden;
   border-collapse: separate;
 }
+th {
+  color: white;
+  background-color: #6e9341;
+  padding: 10px 10px;
+  text-align: center;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
 td {
   border: 1.5px solid rgba(171, 171, 171, 1);
-  padding: 15px 10px;
+  padding: 10px 10px;
   text-align: center;
   color: #000;
   font-family: Poppins;
@@ -235,18 +247,6 @@ td {
   line-height: normal;
 }
 
-th {
-  color: white;
-  background-color: #6e9341;
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
 
 colgroup col {
   width: auto;
@@ -265,3 +265,38 @@ tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
+
+.pg-item-color{
+  background-color: #E8E8E8;
+}
+
+.pg-item-color-current{
+  background-color: #6E9341;
+}
+.pagination-bottom .pagination .page-item:hover .page-link {
+  background-color: transparent;
+  color: inherit;
+}
+.pagination-bottom .pagination .page-item.active .page-link,
+.pagination-bottom .pagination .page-item.pg-item-color-current .page-link {
+    background-color: transparent;
+    color: inherit;
+}
+
+.alignment{
+  margin-top: 30px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.alignment li{
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
