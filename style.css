@@ -160,8 +160,98 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
- 
+
   cursor: pointer;
+}
+
+/* Table */
+table {
+  width: 80vw;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-spacing: 0;
+  border-radius: 10px; /* Adjust the value as needed */
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+th {
+  color: white;
+  background-color: #6e9341;
+  padding: 10px 10px;
+  text-align: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+td {
+  border: 1px solid rgba(171, 171, 171, 1);
+  padding: 10px 10px;
+  text-align: center;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.col-group {
+  width: 16.67%;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.pg-item-color {
+  background-color: #e8e8e8;
+}
+
+.pg-item-color-current {
+  background-color: #6e9341;
+}
+.pagination-bottom .pagination .page-item:hover .page-link {
+  background-color: transparent;
+  color: inherit;
+}
+.pagination-bottom .pagination .page-item.active .page-link,
+.pagination-bottom .pagination .page-item.pg-item-color-current .page-link {
+  background-color: transparent;
+  color: inherit;
+}
+
+.alignment {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.alignment li {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -205,117 +295,4 @@ input[type="checkbox"] {
   .dropdown li:hover {
     background-color: #4c9e9e;
   }
-  
-  
 }
-
-
-/* Table */
-table {
-  
-  width: 80vw;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  border-spacing: 0;
-  border-radius: 10px; /* Adjust the value as needed */
-  overflow: hidden;
-  border-collapse: separate;
-}
-
-th {
-  color: white;
-  background-color: #6e9341;
-  padding: 10px 10px;
-  text-align: center;
-  color: #FFF;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-td {
-  border: 1px solid rgba(171, 171, 171, 1);
-  padding: 10px 10px;
-  text-align: center;
-  color: #000;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-
-colgroup col {
-  width: auto;
-}
-
-tr:first-child th:first-child {
-  border-top-left-radius: 10px;
-}
-tr:first-child th:last-child {
-  border-top-right-radius: 10px;
-}
-tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
-
-
-.pg-item-color{
-  background-color: #E8E8E8;
-}
-
-.pg-item-color-current{
-  background-color: #6E9341;
-}
-.pagination-bottom .pagination .page-item:hover .page-link {
-  background-color: transparent;
-  color: inherit;
-}
-.pagination-bottom .pagination .page-item.active .page-link,
-.pagination-bottom .pagination .page-item.pg-item-color-current .page-link {
-    background-color: transparent;
-    color: inherit;
-}
-
-.alignment{
-  margin-top: 30px;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.alignment li{
-  color: #FFF;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-/* 
-@media  (min-width:470px) {
-  th {
-    font-size: 10px;
-  }
-
-  td {
-    font-size: 13px;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  
-  
-} */
