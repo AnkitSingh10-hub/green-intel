@@ -133,7 +133,7 @@ input[type="checkbox"] {
 }
 .search {
   width: 95%;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ababab;
   background: #fff;
   margin-top: 30px;
@@ -142,8 +142,8 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position: 16px center;
   padding-left: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   color: #ababab;
   font-family: Poppins;
   font-size: 20px;
@@ -154,7 +154,7 @@ input[type="checkbox"] {
 /* Search Button */
 .search-button {
   
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ababab;
   background: #fff;
   background-image: url("search-button.png");
@@ -162,8 +162,8 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   cursor: pointer;
 }
 
@@ -208,4 +208,54 @@ input[type="checkbox"] {
   .dropdown li:hover {
     background-color: #4c9e9e;
   }
+}
+
+/* Table */
+table {
+  width: 95%;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-spacing: 0;
+  border-radius: 10px; /* Adjust the value as needed */
+  overflow: hidden;
+  border-collapse: separate;
+
+}
+
+
+
+td {
+  border: 1px solid rgba(171, 171, 171, 1);
+  padding: 15px 10px;
+  text-align: center;
+}
+
+
+
+th {
+  color: white;
+	background-color: #6E9341;
+  padding: 15px 10px;
+  text-align: center;
+
+  
+}
+
+colgroup col{
+  width: auto;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
