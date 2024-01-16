@@ -126,7 +126,7 @@ input[type="checkbox"] {
 }
 
 /* Search Bar */
-.search-section{
+.search-section {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -153,7 +153,6 @@ input[type="checkbox"] {
 }
 /* Search Button */
 .search-button {
-  
   border-radius: 8px;
   border: 1px solid #ababab;
   background: #fff;
@@ -213,7 +212,7 @@ input[type="checkbox"] {
 /* Table */
 table {
   width: 95%;
-  margin-top:50px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -221,29 +220,34 @@ table {
   border-radius: 10px; /* Adjust the value as needed */
   overflow: hidden;
   border-collapse: separate;
-
 }
-
-
 
 td {
   border: 1px solid rgba(171, 171, 171, 1);
   padding: 15px 10px;
   text-align: center;
+  color: #000;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-
-
 
 th {
   color: white;
-	background-color: #6E9341;
+  background-color: #6e9341;
   padding: 15px 10px;
   text-align: center;
-
-  
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-colgroup col{
+colgroup col {
   width: auto;
 }
 
