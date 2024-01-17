@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+/* NavBar */
 .navbar {
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .nav-links a {
@@ -301,7 +303,7 @@ tr:last-child td:last-child {
 /* SideBar Slider for maps */
 /* Second Page */
 .grid-container {
-  width: 90vw;
+  width: 100%;
   margin: 35px auto;
   display: flex;
   border: 1px solid #cbcbcb;
@@ -312,7 +314,7 @@ tr:last-child td:last-child {
 }
 
 .sidebar {
-  width: 30%;
+  width: 33%;
   height: 100%;
   background-color: #ffffff;
   transition: 1s ease;
@@ -320,7 +322,7 @@ tr:last-child td:last-child {
 }
 
 .main-content {
-  width: 70%;
+  width: 67%;
   height: 100vh;
   background-color: #ccc;
   transition: 1s ease;
@@ -372,20 +374,18 @@ iframe {
 .plant-details h2 {
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  overflow: hidden;
 }
 
 .plant-details p {
   color: #000;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  overflow: hidden;
 
 }
