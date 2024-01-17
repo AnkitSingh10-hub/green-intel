@@ -310,7 +310,6 @@ tr:last-child td:last-child {
   transition: 1s ease;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 .sidebar {
@@ -323,7 +322,6 @@ tr:last-child td:last-child {
 
 .main-content {
   width: 67%;
-  height: 100vh;
   background-color: #ccc;
   transition: 1s ease;
 }
@@ -334,21 +332,21 @@ tr:last-child td:last-child {
 
 .sidebar_small {
   width: 0;
-
 }
-
-button {
+/* slider image and button */
+.slider-button {
   border: none;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  left:100%;
-  bottom: 50%;  
+  left: 97%;
+  bottom: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  position:absolute;
-
+  position: absolute;
+  background-color: transparent;
+}
+.slider-image {
+  max-width: 100%;
 }
 /* Map */
 iframe {
@@ -361,7 +359,7 @@ iframe {
   max-width: 100%;
   object-fit: contain;
 }
-.d {
+.image-div {
   width: 88%;
   margin: 15px auto;
 }
@@ -378,6 +376,7 @@ iframe {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  overflow: hidden;
 }
 
 .plant-details p {
@@ -387,5 +386,48 @@ iframe {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  overflow: hidden;
+}
 
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.buttons{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+}
+
+#reject-button{
+  border-radius: 4px;
+  padding:10px 40px;
+  color: #000;
+  border: 1px solid #A5A5A5;
+  background-color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+#approve-button{
+  border-radius: 4px;
+  padding: 10px 35px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #50D440;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
